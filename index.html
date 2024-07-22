@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+    <style>
+      .main-container{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 80vw;
+        background-color: white;
+      }
+      body{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        background-color: gray;
+      }
+      .pic{
+        height: 80vh;
+        width: 100%;
+        z-index: 1;
+      }
+      .main {
+        height: 100px;
+        /* width: 900px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .container {
+        border: 1px dotted black;
+        background-color: white;
+        height: 50px;
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+      }
+      container > div {
+        padding: 30px;
+      }
+      .class {
+        display: flex;
+        justify-content:start;
+        padding-left: 5%;
+        align-items: center;
+        font-size: 30px;
+        color: grey;
+        width: 50%;
+      }
+      .item {
+        background-color: palevioletred;
+        font: weight 900;
+        color: white;
+      font-size: 30px;
+        width: 420px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: -40Px; */
+        margin-left: 5%;
+
+        /* margin-top: -40px; */
+         z-index: 2;
+      }
+      .box{
+        display: flex;
+      }
+      .box > img{
+        width: 250px;
+      }
+      .main-box {
+        display:grid;
+        padding: 5%;
+        gap: 30Px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+      }
+      @media screen and (max-width:1000Px) {
+        .main-box {
+        display:grid;
+        padding: 5%;
+        gap: 30Px;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+        
+      }
+      .text-box {
+        padding: 0px 20px;
+      }
+      .main-card {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+        gap:3%;
+        justify-content: space-evenly;
+      }
+      .card {
+        /* height: 50vh; */
+        width: 270px;
+        padding: 20px;
+        background-color: white;
+        border: 2px dotted #ddd;
+      }
+      .btn{
+        height: 40Px;
+        width: 120Px;
+      }
+      .card-btn{
+        display: flex;
+        justify-content: end;
+      }
+      .card > svg{
+        height: 50Px;
+        width: 70Px;
+        padding: 8% 0%;
+      }
+      .head {
+        background-color: rgb(216, 112, 147);
+        width: 370px;
+      }
+      .img {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+        justify-content: space-evenly;
+      }
+      .footer{
+        padding:3%;
+        text-align: end;
+        color: gray;
+      }
+    </style>
+    <body>
+      <div class=" main-container">
+    <div class="main">
+      <div class="class">
+        <ion-icon name="eye-outline"></ion-icon>NEW VISION
+      </div>
+      <div class="container">
+        <div>Home</div>
+        <div>Our company</div>
+        <div>Services</div>
+        <div>Contact</div>
+      </div>
+    </div>
+    <img  class="pic" src="./new-vision-01.jpg"/>
+    <div class="item">
+      Welcome to New Vision
+    </div>
+    <div class="main-box">
+        <div class="box">
+          <img src="./img-3x2-01.jpg"/>
+          <div class="text-box">
+            <h2>BEST COLLECTION</h2>
+              Aliquam purus acru congue a gravida ac,facilisis vel erat.maecenas
+              pretium sem.
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img-3x2-03.jpg"/>
+          <div class="text-box">
+            <h2>MOST UNIQUE IDEA <br>EVER MADE</h2>
+            <p>
+              Aliquam purus acru congue a gravida ac,facilisis vel
+              erat.maecenas.Hover #09F
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img-3x2-02.jpg"/>
+          <div class="text-box">
+            <h2>NEW DESIGN FOR<br> YOUR WEBSITE</h2>
+            <p>
+              Aliquam purus acru congue a gravida ac,facilisis vel erat.maecenas
+              pretium sem at nisl malesuada,quis.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img-3x2-04.jpg"/>
+          <div class="text-box">
+            <h2>SIMPLE TOUCH</h2>
+            <p>
+              Please tell your friends about Template MO website.Thank
+              you.Title/Text #666
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="main-card">
+    <div class="card">
+        <svg fill="#f0c7db" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" stroke="#f0c7db"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M416 48c0-8.84-7.16-16-16-16h-64c-8.84 0-16 7.16-16 16v48h96V48zM63.91 159.99C61.4 253.84 3.46 274.22 0 404v44c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32V288h32V128H95.84c-17.63 0-31.45 14.37-31.93 31.99zm384.18 0c-.48-17.62-14.3-31.99-31.93-31.99H320v160h32v160c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-44c-3.46-129.78-61.4-150.16-63.91-244.01zM176 32h-64c-8.84 0-16 7.16-16 16v48h96V48c0-8.84-7.16-16-16-16zm48 256h64V128h-64v160z"></path></g></svg>
+         <h2>TEMPLATE USAGE</h2>
+         <p>You can feel fee to edit and use New Vision template for your commercial websites.Title color is #333</p><br>
+         <div class="card-btn">
+         <button class="btn" style="background-color:palevioletred;">More details</button></div>
+    </div>
+    <div class="card">
+        <svg fill="#f2ceeb"  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" stroke="#f2ceeb"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M160 320h12v16c0 8.84 7.16 16 16 16h40c8.84 0 16-7.16 16-16v-16h12c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32V16c0-8.84-7.16-16-16-16h-64c-8.84 0-16 7.16-16 16v16c-17.67 0-32 14.33-32 32v224c0 17.67 14.33 32 32 32zm304 128h-1.29C493.24 413.99 512 369.2 512 320c0-105.88-86.12-192-192-192v64c70.58 0 128 57.42 128 128s-57.42 128-128 128H48c-26.51 0-48 21.49-48 48 0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16 0-26.51-21.49-48-48-48zm-360-32h208c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8H104c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8z"></path></g></svg>
+        <h2>NEW VISION</h2> 
+        <p>New vision comes with four different HTML pages and provided free of charge by TemplateMo.You canadd more pages if you need.Text color is #666</p>
+    </div>
+    <div class="card">
+        <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 280.027 280.027" xml:space="preserve" fill="#f0ade7" stroke="#f0ade7"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#f0b7e8;" d="M279.756,48.13c0-21.746-17.353-35.003-39.108-35.003h-8.751c-7.246,0-13.126,5.881-13.126,13.126 c0,7.254,5.881,13.126,13.126,13.126h4.375c9.661,0,17.502,7.841,17.502,17.502v157.515h26.253l-0.446-157.515 C279.739,55.428,279.756,49.635,279.756,48.13z"></path> <path style="fill:#f0b7e8;" d="M0.28,48.13c0-21.746,17.353-35.003,39.108-35.003h8.751c7.246,0,13.126,5.881,13.126,13.126 c0,7.254-5.881,13.126-13.126,13.126h-4.375c-9.661,0-17.502,7.841-17.502,17.502v157.515H0.009L0.455,56.881 C0.289,55.428,0.28,49.635,0.28,48.13z"></path> <path style="fill:#efbee5;" d="M236.282,144.389h-43.754c-21.895,0-39.869,16.119-43.098,37.095 c-2.73-1.304-5.942-2.091-9.416-2.091s-6.703,0.788-9.416,2.091c-3.229-20.976-21.203-37.095-43.089-37.095H43.754 C19.584,144.389,0,163.973,0,188.143v35.003C0,247.325,19.584,266.9,43.754,266.9h43.754c24.17,0,43.754-19.576,43.754-43.754 v-15.559c2.59-1.164,5.513-1.943,8.751-1.943c3.229,0,6.161,0.779,8.751,1.943v15.559c0,24.179,19.576,43.754,43.754,43.754h43.754 c24.17,0,43.754-19.576,43.754-43.754v-35.003C280.036,163.973,260.443,144.389,236.282,144.389z M105.01,223.147 c0,9.661-7.841,17.502-17.502,17.502H43.754c-9.661,0-17.502-7.841-17.502-17.502v-35.003c0-9.661,7.841-17.502,17.502-17.502 h43.754c9.661,0,17.502,7.841,17.502,17.502V223.147z M253.784,223.147c0,9.661-7.841,17.502-17.502,17.502h-43.754 c-9.661,0-17.502-7.841-17.502-17.502v-35.003c0-9.661,7.841-17.502,17.502-17.502h43.754c9.661,0,17.502,7.841,17.502,17.502 V223.147z"></path> </g> </g></svg>
+        <h2>DOWNLOAD SITES</h2>
+        <p>Donot re-distribute our template ZIP file on your Website.Or Contact us first.Button color is #C99</p>
+        <div class="card-btn">
+        <button class="btn" style="background-color: palevioletred;">READ MORE</button></div>
+    </div>
+    </div>
+    <div class="item">
+    Featured Carousel Items
+    </div>
+    <div class="img">
+        <img src="./gallery-item-01.jpg">
+        <img src="./gallery-item-02.jpg">
+        <img src="./gallery-item-03.jpg">
+        <img src="./gallery-item-04.jpg">
+    </div>
+    <div class="footer">
+      <p>Copyright © 2020 New Vision - Design: Divya
+      </p>
+    </div>
+  </div>
+  </body>
+</html>
